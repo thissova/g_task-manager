@@ -13,10 +13,6 @@ const taskSchema = mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
   },
-  role: {
-    type: String,
-    default: 'user',
-  },
 });
 
 const User = mongoose.model('Task', taskSchema);
